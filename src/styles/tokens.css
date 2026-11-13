@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light;
+
+  --he-font-body: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", system-ui, sans-serif;
+  --he-font-display: "Funnel Display", system-ui, sans-serif;
+  --he-font-arabic: "Noto Kufi Arabic", "Atkinson Hyperlegible Next", system-ui, sans-serif;
+
+  --he-text-base: 17px;
+  --he-text-large: 20px;
+  --he-leading-body: 1.55;
+
+  --he-night: #0d1324;
+  --he-night-layer: #111827;
+  --he-ink: #111827;
+  --he-muted: #4b5563;
+  --he-subtle: #9ca3af;
+  --he-mist: #c9cfdc;
+  --he-cloud: #e5e7eb;
+  --he-line: #e5e7eb;
+  --he-line-strong: #dde0e7;
+  --he-surface: #f4f5f8;
+  --he-paper: #ffffff;
+  --he-footer-line: #263048;
+  --he-placeholder: #aeb6c8;
+  --he-border-soft: #b8bdc9;
+
+  --jr-night: #0a1030;
+  --jr-night-800: #0f1640;
+  --jr-night-700: #141c55;
+  --jr-blue: #2f3d9a;
+  --jr-blue-dark: #232e78;
+  --jr-blue-light: #6e7cf0;
+  --jr-focus: #a9b3ff;
+  --jr-tint-1: #f3f4fa;
+  --jr-tint-2: #e7e9f6;
+  --jr-tint-3: #dce0fa;
+  --jr-tint-4: #c8cdea;
+  --jr-soft-text: #d5daf5;
+  --jr-link-text: #c7cdff;
+
+  --en-purple: #8f53a1;
+  --en-purple-dark: #7a3f8e;
+  --en-purple-deep: #6e3c80;
+  --en-purple-ink: #5e2f6e;
+  --en-night: #1a0f24;
+  --en-night-800: #26142f;
+  --en-focus: #e6cdee;
+  --en-tint-1: #f7f1f8;
+  --en-tint-2: #f3e6f6;
+  --en-tint-3: #e6cdee;
+  --en-tint-4: #dcc9e2;
+  --en-soft-text: #f0e3f4;
+  --en-star: #c9a8d4;
+  --en-gradient: #a066b2;
+
+  --blend-mid: #5b4ba0;
+  --blend-soft: #4a47a0;
+  --blend-warm: #6d4da1;
+  --blend-text: #eef0ff;
+  --blend-bright: #3a4bb8;
+  --blend-slate: #2a3366;
+  --blend-navy: #1a2042;
+  --blend-plum: #3b2a55;
+
+  --he-radius-pill: 999px;
+  --he-radius-panel: 32px;
+  --he-radius-bento: 28px;
+  --he-radius-card: 18px;
+  --he-radius-enaya-card: 24px;
+  --he-radius-hero: 40px;
+  --he-radius-hero-lg: 48px;
+
+  --he-focus-ring: 3px solid var(--jr-focus);
+  --he-focus-ring-enaya: 3px solid var(--en-focus);
+  --he-focus-ring-edit: 3px solid var(--jr-blue-light);
+  --he-focus-offset: 3px;
+
+  --he-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --he-rise-distance: 48px;
+  --he-rise-duration: 900ms;
+  --he-marquee-duration: 48s;
+  --he-drift-duration: 18s;
+}
+
+html[data-text-size="large"] {
+  --he-text-base: var(--he-text-large);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --he-rise-distance: 32px;
+    --he-rise-duration: 800ms;
+  }
+}
