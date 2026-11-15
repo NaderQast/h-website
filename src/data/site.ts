@@ -10,7 +10,12 @@ export const site = {
     line2: "Bankstown NSW 2200",
   },
   jobsRusUrl: "https://www.jobsrus.com.au/",
+  jobsRusUrlRef:
+    "https://lnkr2xpg87z.typeform.com/to/bLnpORJw?typeform-source=enaya.com.au",
   enayaUrl: "https://enaya.com.au/",
+  enayaUrlRef:
+    "https://6gitozn79lt.typeform.com/to/c6p2y0pE?typeform-source=jobsrus.com.au",
+
   instagramUrl: "https://www.instagram.com/jobs.are.us/",
 } as const;
 
@@ -41,13 +46,15 @@ export const values = [
   {
     letter: "H",
     name: "Honesty",
-    description: "Transparent, client-first support built on trust and clear communication.",
+    description:
+      "Transparent, client-first support built on trust and clear communication.",
     tone: "blue",
   },
   {
     letter: "E",
     name: "Empathy",
-    description: "We listen closely to each person's goals and build the pathway around them.",
+    description:
+      "We listen closely to each person's goals and build the pathway around them.",
     tone: "soft",
   },
   {
@@ -59,7 +66,8 @@ export const values = [
   {
     letter: "O",
     name: "Open-mindedness",
-    description: "Flexible, inclusive support that adapts to each person's needs and strengths.",
+    description:
+      "Flexible, inclusive support that adapts to each person's needs and strengths.",
     tone: "purple",
   },
 ] as const;
@@ -68,19 +76,21 @@ export const referralSteps = [
   {
     number: "1",
     title: "Send the referral",
-    description: "Share the participant's details, plan and goals online or by phone.",
+    description:
+      "Share the participant's details, plan and goals online or by phone.",
     tone: "jr",
   },
   {
     number: "2",
     title: "We call you back",
-    description: "Within [X business days], to confirm fit, funding and availability.",
+    description: "Within 24 hours, to confirm fit, funding and availability.",
     tone: "blend",
   },
   {
     number: "3",
     title: "We meet and match",
-    description: "We meet the participant and family, then match a screened worker.",
+    description:
+      "We meet the participant and family, then match a screened worker.",
     tone: "en",
   },
 ] as const;
@@ -89,21 +99,25 @@ export const insights = [
   {
     title: "The NDIS changes conversation",
     description: "What recent changes and budget cuts mean for families.",
+    url: "https://www.instagram.com/reel/DYQkjgmTtOg/",
     gradient: "linear-gradient(170deg, var(--blend-bright), var(--blend-navy))",
   },
   {
     title: "Healthy reward systems",
     description: "Bribes versus a reward system that actually helps.",
+    url: "https://www.instagram.com/reel/DYiNGsTzs1T/",
     gradient: "linear-gradient(170deg, var(--en-gradient), var(--blend-plum))",
   },
   {
     title: "Employment support boundaries",
     description: "Supporting participants professionally, with purpose.",
+    url: "https://www.instagram.com/reel/DYll1mSTkZm/",
     gradient: "linear-gradient(170deg, var(--blend-mid), var(--blend-navy))",
   },
   {
     title: "Four ways to improve the NDIS",
     description: "Simple ideas for participants and providers.",
+    url: "https://www.instagram.com/reel/DYdRs5bhtrL/",
     gradient: "linear-gradient(170deg, var(--jr-blue), var(--blend-plum))",
   },
 ] as const;

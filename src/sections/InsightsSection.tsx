@@ -1,6 +1,17 @@
 import { insights, site } from '../data/site'
 import { Container } from '../components/layout/Container'
 import { Section } from '../components/layout/Section'
+import ndisChanges from '../../Reels/NDIS changes conversation.mp4'
+import healthyReward from '../../Reels/Healthy reward systems.mp4'
+import employmentSupport from '../../Reels/Employment support boundaries.mp4'
+import improvingNdis from '../../Reels/Improving the NDIS.mp4'
+
+const reelVideos: Record<string, string> = {
+  'The NDIS changes conversation': ndisChanges,
+  'Healthy reward systems': healthyReward,
+  'Employment support boundaries': employmentSupport,
+  'Four ways to improve the NDIS': improvingNdis,
+}
 
 export function InsightsSection() {
   return (
@@ -21,20 +32,18 @@ export function InsightsSection() {
         >
           {insights.map((item) => (
             <li key={item.title} className="flex-[0_0_300px] snap-start">
-              <a href={site.instagramUrl} className="block text-paper no-underline hover:text-paper">
-                <span
-                  className="relative flex aspect-[9/16] items-end overflow-hidden rounded-bento p-5"
-                  style={{ background: item.gradient }}
-                >
-                  <span className="absolute right-4 top-4 flex h-[52px] w-[52px] items-center justify-center rounded-full bg-white/[0.16] backdrop-blur-[10px]">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
-                      <path d="M8 5.5v13l11-6.5-11-6.5z" />
-                    </svg>
-                  </span>
-                  <span className="display-card text-[1.5em] tracking-[-0.015em]">{item.title}</span>
-                </span>
-                <span className="mt-3 block text-mist">{item.description}</span>
-              </a>
+              <div className="relative aspect-[9/16] overflow-hidden rounded-bento bg-night">
+                <video
+                  src={reelVideos[item.title]}
+                  title={`Instagram reel: ${item.title}`}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+              <h3 className="display-card mt-3 text-[1.5em] tracking-[-0.015em] text-paper">{item.title}</h3>
+              <p className="mt-2 text-mist">{item.description}</p>
             </li>
           ))}
 

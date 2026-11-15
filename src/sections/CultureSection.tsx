@@ -1,11 +1,18 @@
-import { Container } from '../components/layout/Container'
-import { Section } from '../components/layout/Section'
+import { Container } from "../components/layout/Container";
+import { Section } from "../components/layout/Section";
 
-const cultureTags = ['Alcohol and pork free spaces', 'Your plan, your say', 'Staff who speak [languages]']
+const cultureTags = [
+  "Alcohol and pork free spaces",
+  "Your plan, your say",
+  "Multinational Team and Languages",
+];
 
 export function CultureSection() {
   return (
-    <Section labelledBy="culture-title" className="bg-paper pb-[clamp(64px,7vw,112px)]">
+    <Section
+      labelledBy="culture-title"
+      className="bg-paper pb-[clamp(64px,7vw,112px)]"
+    >
       <Container>
         <div className="relative flex flex-wrap items-center gap-x-16 gap-y-10 overflow-hidden rounded-[40px] bg-night p-[clamp(28px,4vw,64px)] text-surface">
           <div
@@ -16,16 +23,22 @@ export function CultureSection() {
             [Photo: participants and staff at Home Base, Bankstown]
           </div>
           <div className="relative min-w-0 flex-[1_1_440px]">
-            <h2 id="culture-title" className="display-sub m-0 text-[clamp(2.2em,4vw,3.75em)] text-paper">
+            <h2
+              id="culture-title"
+              className="display-sub m-0 text-[clamp(2.2em,4vw,3.75em)] text-paper"
+            >
               Guided by Islamic values. Open to every family.
             </h2>
             <p className="mt-5 max-w-[32em] text-[1.125em] text-mist">
-              Most of our team and the families we support share an Islamic background. We also believe our differences
-              make us stronger.
+              Most of our team and the families we support share an Islamic
+              background. We also believe our differences make us stronger.
             </p>
             <ul className="m-0 mt-8 flex list-none flex-wrap gap-2.5 p-0">
               {cultureTags.map((tag) => (
-                <li key={tag} className="rounded-full border border-white/16 bg-white/[0.08] px-[18px] py-3">
+                <li
+                  key={tag}
+                  className="rounded-full border border-white/16 bg-white/[0.08] px-[18px] py-3"
+                >
                   {tag}
                 </li>
               ))}
@@ -34,5 +47,5 @@ export function CultureSection() {
         </div>
       </Container>
     </Section>
-  )
+  );
 }

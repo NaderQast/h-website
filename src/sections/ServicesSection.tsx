@@ -1,11 +1,22 @@
-import { site } from '../data/site'
-import { EnayaMark } from '../components/brand/EnayaMark'
-import { JobsRusMark } from '../components/brand/JobsRusMark'
-import { Container } from '../components/layout/Container'
-import { Section } from '../components/layout/Section'
+import { site } from "../data/site";
+import { EnayaMark } from "../components/brand/EnayaMark";
+import { JobsRusMark } from "../components/brand/JobsRusMark";
+import { Container } from "../components/layout/Container";
+import { Section } from "../components/layout/Section";
 
-const jobsRusTags = ['SLES training', '1:1 job coaching', 'Work trials', 'Employer engagement', 'Weekend activities']
-const enayaTags = ['Personal care', 'Daily living', 'Life skills', 'Community outings']
+const jobsRusTags = [
+  "SLES training",
+  "1:1 job coaching",
+  "Work trials",
+  "Employer engagement",
+  "Weekend activities",
+];
+const enayaTags = [
+  "Personal care",
+  "Daily living",
+  "Life skills",
+  "Community outings",
+];
 
 export function ServicesSection() {
   return (
@@ -16,11 +27,15 @@ export function ServicesSection() {
     >
       <Container>
         <div className="flex flex-wrap items-end justify-between gap-x-12 gap-y-4">
-          <h2 id="services-title" className="display-section m-0 min-w-0 flex-[1_1_520px] text-[clamp(2.4em,5vw,4.5em)]">
+          <h2
+            id="services-title"
+            className="display-section m-0 min-w-0 flex-[1_1_520px] text-[clamp(2.4em,5vw,4.5em)]"
+          >
             Two services. One team behind both.
           </h2>
           <p className="m-0 min-w-0 flex-[0_1_26em] text-[1.125em] text-muted">
-            Same values, same screening, same office. Move between work and care support without starting again.
+            Same values, same screening, same office. Move between work and care
+            support without starting again.
           </p>
         </div>
 
@@ -36,7 +51,10 @@ export function ServicesSection() {
             />
             <span className="relative flex items-center gap-3.5">
               <span className="flex h-16 w-16 flex-none items-center justify-center rounded-card bg-paper">
-                <JobsRusMark className="h-[33px] w-[50px]" title="JobsRUs logo" />
+                <JobsRusMark
+                  className="h-[33px] w-[50px]"
+                  title="JobsRUs logo"
+                />
               </span>
               <span className="text-[1.125em] font-bold">JobsRUs</span>
             </span>
@@ -44,7 +62,8 @@ export function ServicesSection() {
               Your goal, our target.
             </span>
             <span className="relative mt-4 max-w-[30em] text-jr-soft-text">
-              Personalised NDIS employment support, from building job skills to a role that suits you and lasts.
+              Personalised NDIS employment support, from building job skills to
+              a role that suits you and lasts.
             </span>
             <span className="relative mt-6 flex flex-wrap gap-2">
               {jobsRusTags.map((tag) => (
@@ -78,7 +97,8 @@ export function ServicesSection() {
               Care, on your terms.
             </span>
             <span className="relative mt-4 max-w-[28em] text-en-soft-text">
-              Everyday support at home and out in the community, shaped around your routines and culture.
+              Everyday support at home and out in the community, shaped around
+              your routines and culture.
             </span>
             <span className="relative mt-6 flex flex-wrap gap-2">
               {enayaTags.map((tag) => (
@@ -93,8 +113,13 @@ export function ServicesSection() {
           </a>
 
           <div className="flex min-w-0 flex-[5_1_340px] flex-col gap-6 rounded-panel bg-paper p-8">
-            <h3 className="display-card m-0 text-[1.75em]">Every worker passes 3-step screening</h3>
-            <ol aria-label="Screening steps" className="m-0 flex list-none items-center gap-0 p-0">
+            <h3 className="display-card m-0 text-[1.75em]">
+              Every worker passes 3-step screening
+            </h3>
+            <ol
+              aria-label="Screening steps"
+              className="m-0 flex list-none items-center gap-0 p-0"
+            >
               <li className="flex flex-1 flex-col gap-2">
                 <span className="h-2 rounded-l-full bg-jr-blue" />
                 <span className="text-[0.9375em]">Interview</span>
@@ -108,30 +133,47 @@ export function ServicesSection() {
                 <span className="text-[0.9375em]">Fit with you</span>
               </li>
             </ol>
-            <p className="m-0 text-muted">Then regular training, so your program stays on track.</p>
+            <p className="m-0 text-muted">
+              Then regular training, so your program stays on track.
+            </p>
           </div>
 
           <div className="flex min-w-0 flex-[3_1_240px] flex-col justify-between gap-4 rounded-panel bg-jr-tint-2 p-8">
-            <p className="display-section m-0 text-[5em] leading-[0.85] text-jr-blue">14</p>
-            <p className="m-0">NDIS registration groups, across employment, daily living and community participation.</p>
+            <p className="display-section m-0 text-[5em] leading-[0.85] text-jr-blue">
+              14
+            </p>
+            <p className="m-0">
+              NDIS registration groups, across employment, daily living and
+              community participation.
+            </p>
           </div>
 
           <a
-            href="#reviews"
+            href="https://share.google/LkKyBgtPnHCag6f3F"
             className="flex min-w-0 flex-[4_1_280px] flex-col justify-between gap-6 rounded-panel bg-ink p-8 text-paper no-underline hover:text-paper"
           >
             <span className="flex gap-1" aria-hidden="true">
               {[0, 1, 2].map((index) => (
-                <svg key={index} width="22" height="22" viewBox="0 0 24 24" fill="var(--en-star)">
+                <svg
+                  key={index}
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="var(--en-star)"
+                >
                   <path d="M12 3.5l2.6 5.3 5.9.9-4.25 4.1 1 5.8L12 16.9l-5.25 2.7 1-5.8L3.5 9.7l5.9-.9L12 3.5z" />
                 </svg>
               ))}
             </span>
-            <span className="display-card text-[1.75em]">Read our live Google reviews, good and bad</span>
-            <span className="link-underline font-bold text-jr-link-text">See reviews</span>
+            <span className="display-card text-[1.75em]">
+              Read our live Google reviews, good and bad
+            </span>
+            <span className="link-underline font-bold text-jr-link-text">
+              See reviews
+            </span>
           </a>
         </div>
       </Container>
     </Section>
-  )
+  );
 }

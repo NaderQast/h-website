@@ -77,15 +77,15 @@ export function HeroSection() {
           </h2>
           <div className="mt-3.5 flex flex-col gap-2">
             <a
-              href={site.jobsRusUrl}
-              className="flex min-h-14 items-center justify-between rounded-card bg-jr-blue px-4 font-bold text-paper no-underline hover:text-paper"
+              href={site.jobsRusUrlRef}
+              className="flex min-h-14 cursor-pointer items-center justify-between rounded-card bg-jr-blue px-4 font-bold text-paper no-underline hover:text-paper"
             >
               Finding or keeping a job
               <span className="font-normal text-jr-soft-text">JobsRUs</span>
             </a>
             <a
-              href={site.enayaUrl}
-              className="flex min-h-14 items-center justify-between rounded-card bg-en-purple px-4 font-bold text-paper no-underline hover:text-paper"
+              href={site.enayaUrlRef}
+              className="flex min-h-14 cursor-pointer items-center justify-between rounded-card bg-en-purple px-4 font-bold text-paper no-underline hover:text-paper"
             >
               Support at home
               <span className="font-normal text-en-soft-text">Enaya</span>
@@ -149,7 +149,7 @@ export function HeroSection() {
                     role="radio"
                     aria-checked={selected}
                     onClick={() => setPicked(choice.id)}
-                    className={`flex min-h-[60px] items-center gap-3.5 rounded-card border px-[18px] text-left text-paper transition-colors ${
+                    className={`flex min-h-[60px] cursor-pointer items-center gap-3.5 rounded-card border px-[18px] text-left text-paper transition-colors ${
                       selected ? 'border-white/70 bg-white/[0.16]' : 'border-white/15 bg-white/[0.03]'
                     }`}
                   >
@@ -180,8 +180,8 @@ export function HeroSection() {
                     </span>
                   </div>
                   <a
-                    href={site.jobsRusUrl}
-                    className="btn btn-light mt-[18px] min-h-[52px] text-jr-blue hover:text-jr-blue"
+                    href={site.jobsRusUrlRef}
+                    className="btn btn-light mt-[18px] min-h-[52px] cursor-pointer text-jr-blue hover:text-jr-blue"
                   >
                     Go to JobsRUs
                   </a>
@@ -200,8 +200,8 @@ export function HeroSection() {
                     </span>
                   </div>
                   <a
-                    href={site.enayaUrl}
-                    className="btn btn-light mt-[18px] min-h-[52px] text-en-purple-deep hover:text-en-purple-deep"
+                    href={site.enayaUrlRef}
+                    className="btn btn-light mt-[18px] min-h-[52px] cursor-pointer text-en-purple-deep hover:text-en-purple-deep"
                   >
                     Go to Enaya
                   </a>
@@ -214,7 +214,7 @@ export function HeroSection() {
                   <span className="text-muted">
                     Our intake team works out whether JobsRUs, Enaya or both are the right fit.
                   </span>
-                  <a href="#refer" className="btn btn-dark mt-[18px] min-h-[52px]">
+                  <a href="#refer" className="btn btn-dark mt-[18px] flex min-h-[52px] w-full">
                     Start a referral
                   </a>
                 </div>
